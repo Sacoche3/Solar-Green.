@@ -567,7 +567,7 @@ class UIManager {
     static updateUserInfo(userData) {
         if (!userData) return;
         
-        const { phoneNumber, balance = 0, withdrawals = 0, deposits = 0 } = userData;
+        const { phoneNumber, balance = 0, withdrawals = 275000, deposits = 100000 } = userData;
         
         // Mise à jour de l'identifiant
         const userIdentifier = document.getElementById('user-identifier');
