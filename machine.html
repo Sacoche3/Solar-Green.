@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes appareils VIP</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            background-color: #f3f4f6;
+            padding: 12px;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 12px;
+            border-radius: 8px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+
+        .stat-label {
+            color: #666;
+            font-size: 12px;
+        }
+
+        .stat-value {
+            color: #2563eb;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 2px 0;
+        }
+
+        .vip-card {
+            background: white;
+            padding: 12px;
+            border-radius: 8px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+            margin-bottom: 12px;
+        }
+
+        .vip-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .vip-icon {
+            width: 40px;
+            height: 40px;
+            background: #2563eb;
+            border-radius: 8px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 12px;
+            font-size: 14px;
+        }
+
+        .vip-title {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .vip-rate {
+            color: #666;
+            font-size: 12px;
+        }
+
+        .vip-info {
+            margin-bottom: 10px;
+        }
+
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            font-size: 13px;
+        }
+
+        .info-label {
+            color: #666;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 6px;
+            background: #e5e7eb;
+            border-radius: 3px;
+            margin: 12px 0;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: #2563eb;
+            border-radius: 3px;
+        }
+
+        .claim-button {
+            width: 100%;
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mes appareils VIP</h1>
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-label">Total de VIP</div>
+                <div class="stat-value">1</div>
+                <div class="stat-label">VIP actifs</div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-label">Bénéfice gagner</div>
+                <div class="stat-value">250 000 XOF</div>
+                <div class="stat-label"></div>
+            </div>
+        </div>
+
+        <div class="vip-card">
+            <div class="vip-header">
+                <div class="vip-icon">VIP 5</div>
+                <div>
+                    <div class="vip-title">VIP 5</div>
+                    <div class="vip-rate">25 000 XOF / jour</div>
+                </div>
+            </div>
+
+            <div class="vip-info">
+                <div class="info-row">
+                    <span class="info-label">Date d'investissement</span>
+                    <span>10/02/2025</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Cycle restant</span>
+                    <span>11 jours</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Total collecté</span>
+                    <span>250 000 / 775 000 XOF</span>
+                </div>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 50%"></div>
+            </div>
+
+            <button class="claim-button">réclamer les gains</button>
+        </div>
+
+        
+</body>
+</html>

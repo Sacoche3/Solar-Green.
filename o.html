@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 5px;
+            background-color: #fff0f5;
+        }
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 0 10px rgba(219, 112, 147, 0.2);
+        }
+        th {
+            background-color: #DB7093;
+            color: white;
+            padding: 6px 4px;
+            text-align: center;
+            font-size: 11px;
+            text-transform: uppercase;
+            border: 1px solid #C71585;
+            white-space: nowrap;
+        }
+        td {
+            padding: 4px;
+            text-align: center;
+            border: 1px solid #FFE4E1;
+            font-size: 11px;
+            white-space: nowrap;
+        }
+        tr:nth-child(even) {
+            background-color: #FFF0F5;
+        }
+        .price {
+            color: #DB7093;
+            font-weight: bold;
+        }
+        .revenue {
+            color: #C71585;
+            font-weight: bold;
+        }
+        .limit-badge {
+            background-color: #DB7093;
+            color: white;
+            width: 16px;
+            height: 16px;
+            border-radius: 3px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            font-weight: bold;
+        }
+        tr:hover {
+            background-color: #FFE4E1;
+        }
+        td:first-child {
+            font-weight: bold;
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>NIVEAU</th>
+                    <th>PRIX FCFA</th>
+                    <th>REVENU/JOUR</th>
+                    <th>REVENU TOTAL</th>
+                    <th>CYCLE</th>
+                    <th>LIMITE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>VIP 0 GRATUIT</td>
+                    <td class="price">500 FCFA</td>
+                    <td class="revenue">20 FCFA</td>
+                    <td class="revenue">1 100 FCFA</td>
+                    <td>55j</td>
+                    <td><div class="limit-badge">1</div></td>
+                </tr>
+                <tr>
+                    <td>VIP 1</td>
+                    <td class="price">3 700 FCFA</td>
+                    <td class="revenue">350 FCFA</td>
+                    <td class="revenue">10 850 FCFA</td>
+                    <td>31j</td>
+                    <td><div class="limit-badge">1</div></td>
+                </tr>
+                <tr>
+                    <td>VIP 2</td>
+                    <td class="price">7 700 FCFA</td>
+                    <td class="revenue">750 FCFA</td>
+                    <td class="revenue">24 000 FCFA</td>
+                    <td>32j</td>
+                    <td><div class="limit-badge">2</div></td>
+                </tr>
+                <tr>
+                    <td>VIP 3</td>
+                    <td class="price">15 700 FCFA</td>
+                    <td class="revenue">1 420 FCFA</td>
+                    <td class="revenue">44 020 FCFA</td>
+                    <td>31j</td>
+                    <td><div class="limit-badge">2</div></td>
+                </tr>
+                <tr>
+                    <td>VIP 4</td>
+                    <td class="price">31 400 FCFA</td>
+                    <td class="revenue">2010 FCFA</td>
+                    <td class="revenue">62 310 FCFA</td>
+                    <td>31j</td>
+                    <td><div class="limit-badge">3</div></td>
+                </tr>
+                <tr>
+                    <td>VIP 5</td>
+                    <td class="price">62 800 FCFA</td>
+                    <td class="revenue">2 850 FCFA</td>
+                    <td class="revenue">91 200 FCFA</td>
+                    <td>32j</td>
+                    <td><div class="limit-badge">3</div></td>
+                </tr>
+                <tr>
+                    <td>VIP 6</td>
+                    <td class="price">125 600 FCFA</td>
+                    <td class="revenue">5 999 FCFA</td>
+                    <td class="revenue">203 966  FCFA</td>
+                    <td>34j</td>
+                    <td><div class="limit-badge">3</div></td>
+                </tr>
+                <tr>
+                    
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
